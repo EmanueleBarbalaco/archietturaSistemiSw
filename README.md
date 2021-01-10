@@ -2,8 +2,8 @@
 Progetto di architettura dei sistemi software: prima versione del progetto instagnam in cui
 viene utilizzata una base di dati PostgreSQL al posto di HSQLDB, l'aggiunta di una nuova ricetta o una nuova connessione 
 viene notificata su un canale kafka.
-Il servizio ricette seguite gestisce una propria base di dati che aggiorna ogni qualvolta venga
-creta una nuova ricetta o connessione.
+Il servizio ricette seguite gestisce una propria base di dati, che viene aggiornata ogni volta che viene aggiunta 
+una nuova ricetta o connessione.
 Tale servizio risponde inoltre alle richieste GET /ricetteseguite/{utente} accedendo alla propria base di dati.
 
 *ESECUZIONE DELL'APPLICAZIONE*
